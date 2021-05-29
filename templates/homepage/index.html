@@ -1,9 +1,53 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+{% load static %}
 <!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="UTF-8">
-  </head>
-  <body>
-      <h1>Hello World</h1>
-  </body>
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Portfolio</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="{% static 'homepage/css/style.css'%}" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="content">
+			<div class="content-top">
+				<div class="content-top__theme">Portfolio</div>
+				<h1 class="content-top__title">Hello, I'm Kirill Fedorenko</h1>
+				<h2 class="content-bottom__title">Web Backend Developer</h2>
+			</div>
+
+			<div class="content-image">
+				<div class="content-image__item">
+					<img src="{% static '/homepage/img/image.jpg' %}">
+				</div>
+			</div>
+
+			<div class="content-bottom">
+				<div class="content-bottom__text">
+					<p>I'm Kirill Fedorenko, a twenty year old web developer from Rostov-on-Don. At the moment I am studying at the Faculty of Physics of the Southern Federal University and devote all my free time to programming and web development.</p><br>
+					<p>I started to get involved in programming from the first year, helping classmates with programming. So I got to know Python and acquired my first development skills, which later came in handy in the scientific field and freelancing.</p><br>
+					<p>My scientific work has always been very closely related to programming. Over the past two years, I have solved several scientific problems:</p>
+				</div>
+				<div class="content-bottom-info">
+					<div class="content-bottom-info__list">
+						<ul>
+							<li>Thompson problem solved;</li>
+							<li>The capsid envelope of the papilloma virus has been modeled;</li>
+							<li>A program has been developed to superimpose the Voronoi division into healthy and malignant epithelial monolayers;</li>
+							<li>A program for superimposing Voronoi triangulation on spherical structures has been developed.</li>
+						</ul>
+					</div>
+					<a href="https://github.com/FedorenkoKirill">
+					<div class="content-bottom-info__button">
+						<span>My GitHub</span>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -126,10 +126,6 @@ STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
 ]
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
-
-# The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type

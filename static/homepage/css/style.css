@@ -90,8 +90,9 @@ body{
 }
 
 
-.content-bottom-info__button{
-	display: inline-block;
+.content-bottom-git__button{
+	display: flex;
+	float: left;
 	margin-top: 59px;
 	height: 44px;
 	padding: 0px 30px;
@@ -105,7 +106,22 @@ body{
 }
 
 
-.content-bottom-info__button span{
+.content-bottom-git__button span{
 	padding-right: 30px;
 	background: url('../img/arrow.svg') right no-repeat;
+}
+
+.content-bottom-blog__button{
+	display: flex;
+	float: right;
+	margin-top: 59px;
+	height: 44px;
+	padding: 0px 30px;
+	background-color: #80b7b3;
+	border-radius: 30px;
+
+	color: #ffffff;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
 }
